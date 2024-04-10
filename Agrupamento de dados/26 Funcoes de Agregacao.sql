@@ -1,0 +1,39 @@
+
+
+
+USE ContosoRetailDW
+
+--SELECT COMUM
+SELECT
+	SalesAmount
+FROM FactSales
+
+--SOMANDO
+SELECT
+	SUM(SalesAmount) AS TOTAL
+FROM FactSales
+
+--AVERAGE -MEDIA
+SELECT
+	AVG(SalesAmount) AS MEDIA
+FROM FactSales
+
+--COUNT
+SELECT
+	COUNT(SalesAmount) AS QUANTIDADE_DE_LINHAS
+FROM FactSales
+
+--MAXIMO
+SELECT
+	MAX(SalesAmount) AS MAXIMO
+FROM FactSales
+
+--MINIMO
+SELECT
+	MIN(SalesAmount) AS MINIMO
+FROM FactSales
+
+--MEDIA V2
+SELECT
+	SUM(SalesAmount)/COUNT(SalesAmount) AS MEDIAV2
+FROM FactSales
